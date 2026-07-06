@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — All Video Downloader HD Player</title>
+<meta name="description" content="Privacy Policy for All Video Downloader HD Player – Social Media Video Saver">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233654FF'/%3E%3Cpath d='M9 9h14v9a7 7 0 0 1-7 7 7 7 0 0 1-7-7V9z' fill='%23fff'/%3E%3Cpath d='M13 16l3 3 5-6' stroke='%233654FF' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  /* ---------- Design tokens ---------- */
+  :root{
+    --bg:#F6F7FB;
+    --surface:#FFFFFF;
+    --surface-2:#EDEFF6;
+    --ink:#171A21;
+    --ink-muted:#5B6472;
+    --line:#E1E4EC;
+    --accent:#3654FF;
+    --accent-soft:#E7EBFF;
+    --accent-2:#A8660A;
+    --accent-2-soft:#FBEBD2;
+    --good:#147A54;
+    --good-soft:#E1F3EA;
+    --danger-soft:#FBEAEA;
+    --danger:#B23A3A;
+    --radius-lg:18px;
+    --radius-md:12px;
+    --radius-sm:8px;
+    --shadow:0 1px 2px rgba(23,26,33,.05), 0 10px 28px -14px rgba(23,26,33,.16);
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Segoe UI Mono", Consolas, Menlo, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --maxw: 780px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0C0F18;
+      --surface:#131826;
+      --surface-2:#171E30;
+      --ink:#EAEDF4;
+      --ink-muted:#93A0B8;
+      --line:#232C40;
+      --accent:#8199FF;
+      --accent-soft:#1B2450;
+      --accent-2:#FFB454;
+      --accent-2-soft:#3A2B10;
+      --good:#4AD69B;
+      --good-soft:#123425;
+      --danger-soft:#3A1E1E;
+      --danger:#E28080;
+      --shadow:0 1px 2px rgba(0,0,0,.35), 0 16px 36px -18px rgba(0,0,0,.7);
+    }
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{ color:var(--accent); text-decoration-thickness:1.5px; text-underline-offset:2px; }
+  a:focus-visible, button:focus-visible, .chip:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+  .skip-link{
+    position:absolute; left:-999px; top:auto;
+    background:var(--accent); color:#fff; padding:.7em 1.1em; border-radius:var(--radius-sm);
+    z-index:100; font-weight:600;
+  }
+  .skip-link:focus{ left:12px; top:12px; }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 20px; }
+
+  /* ---------- Header ---------- */
+  header.top{
+    padding:36px 0 0;
+  }
+  .brand-row{
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:space-between;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; min-width:0; }
+  .brand-mark{
+    width:34px; height:34px; flex:none; border-radius:9px;
+    background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size:.85rem;
+  }
+  .brand-name{ font-weight:700; font-size:.95rem; letter-spacing:-.01em; }
+  .eyebrow{
+    font-family:var(--mono); text-transform:uppercase; letter-spacing:.14em; font-size:.68rem;
+    color:var(--ink-muted); font-weight:600;
+  }
+  .updated-chip{
+    font-family:var(--mono); font-size:.72rem; color:var(--ink-muted);
+    border:1px solid var(--line); border-radius:999px; padding:5px 12px; white-space:nowrap;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding:40px 0 8px; }
+  .hero h1{
+    font-size:clamp(1.9rem, 1.4rem + 2.2vw, 2.9rem);
+    line-height:1.08; letter-spacing:-.02em; font-weight:800; margin:14px 0 14px;
+  }
+  .hero h1 .accent-word{ color:var(--accent); }
+  .hero p.lead{
+    font-size:1.05rem; color:var(--ink-muted); max-width:56ch; margin:0 0 28px;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .hero-anim{ animation:rise .6s ease both; }
+    .hero-anim.d2{ animation-delay:.08s; }
+    .hero-anim.d3{ animation-delay:.16s; }
+    @keyframes rise{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:translateY(0); } }
+  }
+
+  /* ---------- Flow diagram (signature element) ---------- */
+  .flow-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:20px 20px 16px; margin-bottom:8px;
+  }
+  .flow-card svg{ width:100%; height:auto; display:block; }
+  .flow-node-box{ fill:var(--surface-2); stroke:var(--line); }
+  .flow-node-text{ fill:var(--ink); font-family:var(--sans); font-weight:700; }
+  .flow-node-sub{ fill:var(--ink-muted); font-family:var(--sans); font-weight:500; }
+  .flow-arrow{ stroke:var(--accent); }
+  .flow-arrow-head{ fill:var(--accent); }
+  .flow-good-text{ fill:var(--good); font-family:var(--mono); font-weight:700; }
+  .flow-cloud{ fill:none; stroke:var(--ink-muted); }
+  .flow-cloud-strike{ stroke:var(--danger); }
+  .flow-cloud-text{ fill:var(--ink-muted); font-family:var(--mono); }
+  .flow-caption{
+    font-size:.78rem; color:var(--ink-muted); text-align:center; margin:10px 2px 2px;
+  }
+
+  /* ---------- Quick nav ---------- */
+  nav.quicknav{
+    position:sticky; top:0; z-index:20; background:var(--bg);
+    padding:14px 0; margin-top:10px; border-bottom:1px solid var(--line);
+  }
+  nav.quicknav::before{ content:""; }
+  .chip-row{
+    display:flex; gap:8px; overflow-x:auto; scrollbar-width:none; -ms-overflow-style:none;
+    padding-bottom:2px;
+  }
+  .chip-row::-webkit-scrollbar{ display:none; }
+  .chip{
+    flex:none; font-size:.82rem; font-weight:600; color:var(--ink-muted);
+    background:var(--surface); border:1px solid var(--line); border-radius:999px;
+    padding:7px 14px; text-decoration:none; white-space:nowrap; transition:color .15s, border-color .15s, background .15s;
+  }
+  .chip:hover{ color:var(--accent); border-color:var(--accent); }
+
+  /* ---------- Sections ---------- */
+  main{ padding:36px 0 10px; }
+  section.card{
+    scroll-margin-top:66px;
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow); padding:26px 24px; margin-bottom:20px;
+  }
+  section.card h2{
+    font-size:1.28rem; letter-spacing:-.01em; margin:0 0 6px; display:flex; align-items:center; gap:10px;
+  }
+  section.card .sec-num{
+    font-family:var(--mono); font-size:.72rem; color:var(--accent); background:var(--accent-soft);
+    border-radius:6px; padding:3px 7px; font-weight:700;
+  }
+  section.card p{ color:var(--ink); }
+  section.card p.muted, li.muted{ color:var(--ink-muted); }
+  section.card ul{ padding-left:1.2em; margin:10px 0; }
+  section.card li{ margin:6px 0; }
+
+  .split{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px; }
+  .split .box{ border-radius:var(--radius-md); padding:16px 16px 14px; border:1px solid var(--line); }
+  .box.no{ background:var(--danger-soft); }
+  .box.yes{ background:var(--good-soft); }
+  .box h3{ font-size:.86rem; text-transform:uppercase; letter-spacing:.04em; margin:0 0 10px; }
+  .box.no h3{ color:var(--danger); }
+  .box.yes h3{ color:var(--good); }
+  .box ul{ margin:0; padding-left:1.1em; font-size:.93rem; }
+  .box li{ margin:5px 0; }
+
+  /* ---------- Permission manifest block ---------- */
+  .manifest{
+    margin-top:16px; border:1px solid var(--line); border-radius:var(--radius-md);
+    overflow:hidden; background:var(--surface-2);
+  }
+  .manifest-head{
+    font-family:var(--mono); font-size:.7rem; letter-spacing:.08em; color:var(--ink-muted);
+    padding:10px 14px; border-bottom:1px solid var(--line); text-transform:uppercase;
+  }
+  .perm-row{
+    display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start;
+    padding:14px; border-bottom:1px solid var(--line);
+  }
+  .perm-row:last-child{ border-bottom:none; }
+  .perm-tag{
+    font-family:var(--mono); font-size:.74rem; font-weight:700; color:var(--accent);
+    background:var(--accent-soft); border-radius:6px; padding:5px 9px; white-space:nowrap; height:fit-content;
+  }
+  .perm-desc p{ margin:0; font-size:.93rem; }
+  .perm-desc .const{
+    display:block; font-family:var(--mono); font-size:.72rem; color:var(--ink-muted); margin-bottom:4px;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-row{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:14px; }
+  .mail-btn{
+    display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:#fff;
+    font-weight:700; text-decoration:none; padding:11px 18px; border-radius:999px; font-size:.92rem;
+    transition:opacity .15s;
+  }
+  .mail-btn:hover{ opacity:.88; }
+
+  footer{
+    padding:28px 0 60px; text-align:center; color:var(--ink-muted); font-size:.82rem;
+  }
+  footer .foot-name{ font-weight:600; color:var(--ink); }
+
+  /* ---------- Back to top ---------- */
+  #toTop{
+    position:fixed; right:18px; bottom:18px; width:42px; height:42px; border-radius:50%;
+    background:var(--accent); color:#fff; border:none; box-shadow:var(--shadow); cursor:pointer;
+    display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none;
+    transition:opacity .2s, transform .2s; z-index:30;
+  }
+  #toTop.show{ opacity:1; pointer-events:auto; }
+  #toTop:hover{ transform:translateY(-2px); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:640px){
+    .split{ grid-template-columns:1fr; }
+    section.card{ padding:20px 18px; }
+    .hero h1{ margin-top:10px; }
+    .perm-row{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand-row">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">▶</div>
+        <span class="brand-name" data-cfg="appNameShort"></span>
+      </div>
+      <span class="updated-chip">Last updated: <span data-cfg="lastUpdated"></span></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <p class="eyebrow hero-anim">Privacy Policy</p>
+  <h1 class="hero-anim d2">Your videos land on <span class="accent-word">your phone</span>.<br>Not on our servers.</h1>
+  <p class="lead hero-anim d3">
+    <span data-cfg="appNameShort"></span> is built to download and play videos locally, without
+    accounts, without tracking, and without a backend that stores what you save. This page explains,
+    in plain language, exactly what the app touches and why.
+  </p>
+
+  <div class="flow-card hero-anim d3">
+    <svg viewBox="0 0 720 190" role="img" aria-labelledby="flowTitle flowDesc">
+      <title id="flowTitle">How your data moves</title>
+      <desc id="flowDesc">A link you paste is fetched by the app and saved directly to your device's storage. No developer-owned server sits in this path.</desc>
+
+      <!-- Node 1 -->
+      <rect class="flow-node-box" x="10" y="55" width="180" height="80" rx="14" stroke-width="1.5"></rect>
+      <text class="flow-node-text" x="100" y="90" font-size="14" text-anchor="middle">Link you paste</text>
+      <text class="flow-node-sub" x="100" y="109" font-size="11" text-anchor="middle">social/video URL</text>
+
+      <!-- Arrow 1 -->
+      <line class="flow-arrow" x1="192" y1="95" x2="256" y2="95" stroke-width="2"></line>
+      <polygon class="flow-arrow-head" points="256,95 246,90 246,100"></polygon>
+
+      <!-- Node 2 -->
+      <rect class="flow-node-box" x="260" y="55" width="200" height="80" rx="14" stroke-width="1.5"></rect>
+      <text class="flow-node-text" x="360" y="90" font-size="14" text-anchor="middle">The app</text>
+      <text class="flow-node-sub" x="360" y="109" font-size="11" text-anchor="middle">fetches it, on your device</text>
+
+      <!-- Arrow 2 -->
+      <line class="flow-arrow" x1="462" y1="95" x2="526" y2="95" stroke-width="2"></line>
+      <polygon class="flow-arrow-head" points="526,95 516,90 516,100"></polygon>
+
+      <!-- Node 3 -->
+      <rect class="flow-node-box" x="530" y="55" width="180" height="80" rx="14" stroke-width="1.5"></rect>
+      <text class="flow-node-text" x="620" y="86" font-size="14" text-anchor="middle">Your device</text>
+      <text class="flow-node-text" x="620" y="103" font-size="14" text-anchor="middle">storage</text>
+      <text class="flow-good-text" x="620" y="122" font-size="10" text-anchor="middle">STAYS HERE</text>
+
+      <!-- Cloud, struck through -->
+      <g transform="translate(300,150)">
+        <path class="flow-cloud" d="M-40 8 a14 14 0 0 1 6-26 a18 18 0 0 1 34-8 a14 14 0 0 1 8 34 z" stroke-width="1.5"></path>
+        <line class="flow-cloud-strike" x1="-46" y1="-4" x2="14" y2="16" stroke-width="2"></line>
+        <text class="flow-cloud-text" x="0" y="30" font-size="10.5" text-anchor="middle">no developer server in this path</text>
+      </g>
+    </svg>
+  </div>
+  <p class="flow-caption">A simplified view of where your data actually goes.</p>
+</div>
+
+<nav class="quicknav" aria-label="Section navigation">
+  <div class="wrap">
+    <div class="chip-row">
+      <a class="chip" href="#intro">Introduction</a>
+      <a class="chip" href="#data-collected">Data We Collect</a>
+      <a class="chip" href="#permissions">Permissions</a>
+      <a class="chip" href="#storage-security">Storage &amp; Security</a>
+      <a class="chip" href="#third-party">Third-Party</a>
+      <a class="chip" href="#children">Children</a>
+      <a class="chip" href="#changes">Changes</a>
+      <a class="chip" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="card" id="intro">
+      <h2><span class="sec-num">01</span> Introduction</h2>
+      <p>
+        This Privacy Policy explains how <span data-cfg="appNameFull"></span>
+        (package name: <code data-cfg="packageName" style="font-family:var(--mono);"></code>, "the app", "we", "us")
+        handles information when you use it. The app is built and maintained by an independent
+        developer, not a company with a data team — so this policy is written to be short,
+        specific, and honest rather than padded with boilerplate.
+      </p>
+      <p>
+        In short: the app lets you paste a link, download the video, and play it back from your
+        own device. There's no sign-up, no user profile, and no server we run that stores your
+        downloads or your activity.
+      </p>
+    </section>
+
+    <section class="card" id="data-collected">
+      <h2><span class="sec-num">02</span> Information We Collect</h2>
+      <p>
+        Because there's no login system, we don't have names, emails, or phone numbers tied to
+        your use of the app. Here's the fuller picture:
+      </p>
+      <div class="split">
+        <div class="box no">
+          <h3>We don't collect</h3>
+          <ul>
+            <li>Your name, email, or phone number</li>
+            <li>Account credentials or profiles (there are none)</li>
+            <li>Precise location or contacts</li>
+            <li>Payment information</li>
+            <li>Advertising IDs or usage analytics (see note below)</li>
+          </ul>
+        </div>
+        <div class="box yes">
+          <h3>What touches the app</h3>
+          <ul>
+            <li>The link/URL you paste in, to fetch the content</li>
+            <li>The video/media file itself, saved to your device</li>
+            <li>Basic device info (OS version, model) if you email us for support</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:16px; font-size:.9rem;">
+        Note on device diagnostics: like most Android apps, ours may generate basic crash or
+        performance diagnostics collected automatically by Google Play's own developer tools.
+        That data goes to Google under
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>,
+        separately from anything we ourselves collect — we don't run our own analytics SDK today.
+      </p>
+    </section>
+
+    <section class="card" id="permissions">
+      <h2><span class="sec-num">03</span> How We Use Permissions</h2>
+      <p>The app requests a small, fixed set of Android permissions. Here's exactly what each one is for:</p>
+      <div class="manifest">
+        <div class="manifest-head">AndroidManifest.xml — permissions in use</div>
+
+        <div class="perm-row">
+          <span class="perm-tag">STORAGE</span>
+          <div class="perm-desc">
+            <span class="const">READ_EXTERNAL_STORAGE · WRITE_EXTERNAL_STORAGE · READ_MEDIA_VIDEO (Android 13+)</span>
+            <p>Lets the app save the videos you download and show them in the app's built-in
+            player. Files land in your device's normal storage — the same place any download
+            would go.</p>
+          </div>
+        </div>
+
+        <div class="perm-row">
+          <span class="perm-tag">INTERNET</span>
+          <div class="perm-desc">
+            <span class="const">INTERNET</span>
+            <p>Lets the app reach the link you provide and pull down the video or media file.
+            Without it, nothing can be downloaded.</p>
+          </div>
+        </div>
+
+        <div class="perm-row">
+          <span class="perm-tag">NETWORK</span>
+          <div class="perm-desc">
+            <span class="const">ACCESS_NETWORK_STATE</span>
+            <p>Lets the app check whether you're online before starting a download, so it can
+            show a clear "you're offline" message instead of failing silently.</p>
+          </div>
+        </div>
+
+        <div class="perm-row">
+          <span class="perm-tag">WAKE LOCK</span>
+          <div class="perm-desc">
+            <span class="const">WAKE_LOCK</span>
+            <p>Keeps your screen or processor awake while a download is actively running, so a
+            large file doesn't get cut off if your device would otherwise go to sleep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="storage-security">
+      <h2><span class="sec-num">04</span> Data Storage &amp; Security</h2>
+      <ul>
+        <li>Downloaded videos are stored locally, in your device's storage — not on a server we own or operate.</li>
+        <li>There's no account system, so there's no database of user profiles to protect or leak.</li>
+        <li>Content is fetched directly from the source you point the app at, using standard secure connections where the source supports them.</li>
+        <li>Because we don't hold your downloads or links remotely, uninstalling the app or clearing its storage removes that local data — we have no remote copy to delete on our end.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="third-party">
+      <h2><span class="sec-num">05</span> Third-Party Services</h2>
+      <p>
+        When you paste a link, the app fetches content directly from that source (for example, a
+        social media platform or website). That platform's own privacy policy governs how it
+        handles the request on its end — we'd recommend checking it if you're unsure.
+      </p>
+      <p>
+        As of the date at the top of this page, the app does not integrate any advertising SDK or
+        analytics SDK of our own. If that ever changes — say, we add an ad network to keep the app
+        free — we'll update this section and the "Last updated" date before that change ships.
+      </p>
+    </section>
+
+    <section class="card" id="children">
+      <h2><span class="sec-num">06</span> Children's Privacy</h2>
+      <p>
+        The app is not directed at children under 13, and we don't knowingly collect personal
+        information from children. Since there's no account system, no personal information is
+        collected from any user, child or adult, in the first place. If you believe a child has
+        somehow provided us information (for example, by email), contact us and we'll delete it.
+      </p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2><span class="sec-num">07</span> Changes to This Policy</h2>
+      <p>
+        We may update this policy occasionally — for example, if we add a new feature that touches
+        data differently. Any changes will be posted on this same page with an updated "Last
+        updated" date above. We'd encourage checking back periodically if you'd like to stay
+        current.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2><span class="sec-num">08</span> Contact Us</h2>
+      <p>
+        This app is built and maintained by an independent developer. If you have questions about
+        this policy, or anything about how the app works, reach out directly:
+      </p>
+      <div class="contact-row">
+        <a class="mail-btn" id="mailBtn" href="#">✉ <span data-cfg="contactEmail"></span></a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="foot-name" data-cfg="appNameShort"></span> · Package: <span data-cfg="packageName"></span></p>
+    <p>© <span data-cfg="year"></span> — Independent developer. Last updated <span data-cfg="lastUpdated"></span>.</p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+
+<script>
+  // ============================================================
+  // EDIT THIS BLOCK to update the whole page in one place.
+  // ============================================================
+  const CONFIG = {
+    appNameFull: "All Video Downloader HD Player – Social Media Video Saver",
+    appNameShort: "All Video Downloader HD Player",
+    packageName: "video_downloader",
+    contactEmail: "karamveersg1313@gmail.com",   // <-- put your real support email here
+    lastUpdated: "July 6, 2026"                // <-- update this whenever you edit the policy
+  };
+  // ============================================================
+
+  document.title = "Privacy Policy — " + CONFIG.appNameShort;
+
+  document.querySelectorAll('[data-cfg]').forEach(function(el){
+    const key = el.getAttribute('data-cfg');
+    if (key === 'year') { el.textContent = new Date().getFullYear(); return; }
+    if (CONFIG[key] !== undefined) el.textContent = CONFIG[key];
+  });
+
+  const mailBtn = document.getElementById('mailBtn');
+  if (mailBtn) {
+    mailBtn.href = "mailto:" + CONFIG.contactEmail + "?subject=" + encodeURIComponent(CONFIG.appNameShort + " — Privacy question");
+  }
+
+  const toTopBtn = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 500) toTopBtn.classList.add('show');
+    else toTopBtn.classList.remove('show');
+  }, { passive: true });
+  toTopBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
